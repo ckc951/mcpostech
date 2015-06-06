@@ -11,6 +11,7 @@ on mine of coal ore:
 #	set name of the item to "<gold>good coal"
 #	set enchant the item with smite 1
 #	message "coal mined" to player
+# test lennon
 
 #on break of iron ore:
 #on break of lapis ore:
