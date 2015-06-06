@@ -1,0 +1,13 @@
+# written by dr_lennon
+# date 2015-05-05
+# designed for Tribe war server
+# for adjust pvp balance
+
+on damage of a player:
+	attacker is a player	
+	send "pvp뎀감 적용 50%%테스트중" to attacker and victim
+	set damage to damage * 0.5
+	send "원래 데미지는 %damage% 50%%적용되어 %damage * 0.5%적용됨" to attacker and victim
+
+on join:
+	set the maximum health of the player to 20

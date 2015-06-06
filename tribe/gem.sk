@@ -1,0 +1,21 @@
+# written by dr_lennon
+# drop chance and modifier
+# Ore Regen functions.
+on mine of coal ore:
+	chance of 20%:
+		drop 1 coal of fortune 1 named "<blue>Good Coal"
+
+
+#on spawn of coal:
+#	set the 1st line of the item's lore to "<orange>Excalibur 2.0"
+#	set name of the item to "<gold>good coal"
+#	set enchant the item with smite 1
+#	message "coal mined" to player
+
+#on break of iron ore:
+#on break of lapis ore:
+#on break of gold ore:
+#on break of diamond ore:
+#on break of redstone ore:
+#on break of emerald ore:
+#on break of quartz ore:

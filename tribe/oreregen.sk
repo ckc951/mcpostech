@@ -1,0 +1,6 @@
+# written by dr_lennon
+# date 2015-03-22
+
+#every 5 minute:
+#	message "5분 간격 자동 메세지 테스트" to players
+#	execute console command "/say 5분마다 이벤트 실행, 현재 시각은 %NOW% 테스트 중입니다."

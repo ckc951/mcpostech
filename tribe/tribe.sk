@@ -1,0 +1,163 @@
+# written by dr_lennon
+# date 2015-03-22
+# designed for Tribe war server
+
+
+#Ore regen when server restart
+#on load:
+#	if file "plugins/RegenOre" doesn't exists:
+#		create folder "plugins/RegenOre"
+#	if file "plugins/RegenOre/regenore" doesn't exists:
+#		create file "plugins/RegenOre/regenore.yml"
+#	if file "plugins/RegenOre/players" doesn't exists:
+#		create file "plugins/RegenOre/players.yml"
+
+
+# join welcome message
+on join:
+#	set "%player's UUID%" to "%name of player%" in yaml file "plugins/RegenOre/players.yml"
+#	send resourcepack "https://s3-us-west-2.amazonaws.com/elmakers/Magic/Magic-RP.zip" to player
+#	execute console command "/citizens reload"
+#	wait 3 second
+#	chance of 87%:
+	execute console command "/say %player%님이 부족 전쟁에 참전하였습니다. 바바리안이 더 필요합니다!"
+# this need wild skripts
+# Set text of player's bossbar to "Welcome to Tribe War"
+
+# region enter:
+#	send player title "&9%region%" with subtitle "&7welcome %player%" for 3 seconds
+
+#command /example:
+#	trigger:
+#		set slidebar of dirt to "&e&lHEY THERE!"
+#		set score "&aSCORE NAME" in sidebar of players to 1
+#		message "hello example"
+
+
+# drop chance and modifier
+on death of zombie:
+	chance of 10%:
+		spawn 5 silverfish
+	chance of 10%:
+		drop 1 iron ingot
+on death of creeper:
+	chance of 50%:
+		spawn 1 ghast
+	chance of 100%:
+		drop 1 tnt
+on death of ghast:
+	chance of 100%:
+		drop 1 tnt
+on death of skeleton:
+	chance of 30%:
+		spawn 1 blaze
+on death of player:
+	chance of 30%:
+		drop 1 diamond
+
+
+# Ore Regen functions.
+on break of coal ore:
+	player's gamemode is survival
+	set block to bedrock
+	set {coal_ore.%block%} to event-block
+	wait 5 minute
+	set block to coal ore
+	delete {coal_ore.%block%}
+
+on break of iron ore:
+	player's gamemode is survival
+	set block to bedrock
+	set {iron_ore.%block%} to event-block
+	wait 10 minute
+	set block to iron ore
+	delete {iron_ore.%block%}
+
+on break of lapis ore:
+	player's gamemode is survival
+	set block to bedrock
+	set {lapis_ore.%block%} to event-block
+	wait 15 minute
+	set block to lapis ore
+	delete {lapis_ore.%block%}
+
+on break of gold ore:
+	player's gamemode is survival
+	set block to bedrock
+	set {gold_ore.%block%} to event-block
+	wait 30 minute
+	set block to gold ore
+	delete {gold_ore.%block%}
+
+on break of diamond ore:
+	player's gamemode is survival
+	set block to bedrock
+	set {diamond_ore.%block%} to event-block
+	wait 1 hour
+	set block to diamond ore
+	delete {diamond_ore.%block%}
+
+on break of redstone ore:
+	player's gamemode is survival
+	set block to bedrock
+	set {redstone_ore.%block%} to event-block
+	wait 15 minute
+	set block to redstone ore
+	delete {redstone_ore.%block%}
+
+on break of emerald ore:
+	player's gamemode is survival
+	set block to bedrock
+	set {emerald_ore.%block%} to event-block
+	wait 1 hour
+	set block to emerald ore
+	delete {emerald_ore.%block%}
+
+on break of quartz ore:
+	player's gamemode is survival
+	set block to bedrock
+	set {quartz_ore.%block%} to event-block
+	wait 10 minutes
+	set block to quartz ore
+	delete {quartz_ore.%block%}
+
+# mining smooth stone
+on break of stone:0:
+	player's gamemode is survival
+	set block to bedrock
+	set {stone.%block%} to event-block
+	wait 30 second
+	set block to stone:0
+	delete {stone.%block%}
+
+# disable block ore or stone placing
+on place of any ore:
+	player's gamemode is survival
+	cancel event
+	set block at event-block to air
+
+on place of stone:0:
+	player's gamemode is survival
+	cancel event
+	set block at event-block to air
+
+
+# GUI ITEM COMMAND systems
+# 처방전 시스템 - 처방전 책 클릭시 질병명 체크함.
+on rightclick holding a book:
+	if "%name of player's held item%" is "&b처방전":
+		if target block is a chest:
+			stop
+		if target block is a furnace:
+			stop
+		if target block is a sign:
+			stop
+		if target block is a ender chest:
+			stop
+		if target block is a crafting table:
+			stop
+		if target block is a dispenser:
+			stop
+		execute player command "/disease check"
+#        apply regeneration to player for 10 seconds
+#        remove a paper from the player
