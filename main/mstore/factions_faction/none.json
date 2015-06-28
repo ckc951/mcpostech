@@ -1,0 +1,140 @@
+{
+  "name": "§2Wilderness",
+  "createdAtMillis": 1422308219622,
+  "flags": {
+    "open": false,
+    "permanent": true,
+    "peaceful": false,
+    "infpower": true,
+    "powerloss": true,
+    "pvp": true,
+    "friendlyfire": false,
+    "monsters": true,
+    "explosions": true,
+    "offlineexplosions": true,
+    "firespread": true,
+    "endergrief": true
+  },
+  "perms": {
+    "build": [
+      "TRUCE",
+      "MEMBER",
+      "NEUTRAL",
+      "ENEMY",
+      "RECRUIT",
+      "OFFICER",
+      "ALLY",
+      "LEADER"
+    ],
+    "painbuild": [],
+    "door": [
+      "TRUCE",
+      "MEMBER",
+      "NEUTRAL",
+      "ENEMY",
+      "RECRUIT",
+      "OFFICER",
+      "ALLY",
+      "LEADER"
+    ],
+    "button": [
+      "TRUCE",
+      "MEMBER",
+      "NEUTRAL",
+      "ENEMY",
+      "RECRUIT",
+      "OFFICER",
+      "ALLY",
+      "LEADER"
+    ],
+    "lever": [
+      "TRUCE",
+      "MEMBER",
+      "NEUTRAL",
+      "ENEMY",
+      "RECRUIT",
+      "OFFICER",
+      "ALLY",
+      "LEADER"
+    ],
+    "container": [
+      "TRUCE",
+      "MEMBER",
+      "NEUTRAL",
+      "ENEMY",
+      "RECRUIT",
+      "OFFICER",
+      "ALLY",
+      "LEADER"
+    ],
+    "name": [
+      "LEADER"
+    ],
+    "desc": [
+      "LEADER",
+      "OFFICER"
+    ],
+    "motd": [
+      "LEADER",
+      "OFFICER"
+    ],
+    "invite": [
+      "LEADER",
+      "OFFICER"
+    ],
+    "kick": [
+      "LEADER",
+      "OFFICER"
+    ],
+    "title": [
+      "LEADER",
+      "OFFICER"
+    ],
+    "home": [
+      "LEADER",
+      "OFFICER",
+      "MEMBER",
+      "RECRUIT",
+      "ALLY"
+    ],
+    "sethome": [
+      "LEADER",
+      "OFFICER"
+    ],
+    "deposit": [
+      "OFFICER",
+      "LEADER"
+    ],
+    "withdraw": [
+      "LEADER"
+    ],
+    "territory": [
+      "LEADER",
+      "OFFICER"
+    ],
+    "access": [
+      "LEADER",
+      "OFFICER"
+    ],
+    "claimnear": [
+      "LEADER",
+      "OFFICER",
+      "MEMBER",
+      "RECRUIT",
+      "ALLY"
+    ],
+    "rel": [
+      "LEADER",
+      "OFFICER"
+    ],
+    "disband": [
+      "LEADER"
+    ],
+    "flags": [
+      "LEADER"
+    ],
+    "perms": [
+      "LEADER"
+    ]
+  }
+}

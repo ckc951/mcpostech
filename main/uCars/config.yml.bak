@@ -1,0 +1,101 @@
+general:
+  cars:
+    '# description': If enabled this will allow for drivable cars(Minecarts not on rails)
+    enable: true
+    defSpeed: 40.0
+    smooth: true
+    effectBlocks:
+      enable: true
+    HighblockBoost:
+    - RED_SANDSTONE_SLAB
+    jumpAmount: 0.0
+    teleportBlock:
+    - BADROCK
+    trafficLights:
+      enable: false
+      waitingBlock:
+      - QUARTZ_BLOCK
+    hitBy:
+      enable: true
+      enableMonsterDamage: true
+      enableAllMonsterDamage: false
+      power: 10.0
+      damage: 1.5
+    roadBlocks:
+      enable: false
+      ids:
+      - WOOL:15
+      - WOOL:8
+      - WOOL:0
+      - WOOL:7
+    licenses:
+      enable: false
+    fuel:
+      enable: true
+      price: 0.0
+      check:
+      - FEATHER
+      cmdPerm: ucars.ucars
+      items:
+        enable: true
+        ids:
+        - MELON_BLOCK
+        - BREAD
+        - APPLE
+        - RAW_FISH:0
+        - RAW_FISH:1
+        - INK_SACK:2
+        - INK_SACK:5
+        - INK_SACK:8
+        - INK_SACK:10
+        - BROWN_MUSHROOM
+        - RED_MUSHROOM
+        - PUMPKIN_PIE
+        - BOOK
+      sellFuel: false
+      bypassPerm: ucars.bypassfuel
+    placePerm:
+      enable: false
+      perm: ucars.place
+    health:
+      default: 10.0
+      max: 100.0
+      min: 5.0
+      overrideDefault: true
+      underwaterDamage: 0.0
+      lavaDamage: 0.0
+      punchDamage: 50.0
+      cactusDamage: 0.0
+      crashDamage: 0.0
+    forceRaceControlSystem: false
+    playersIgnoreTrafficLights: false
+    lowBoost:
+    - COAL
+    medBoost:
+    - IRON_INGOT
+    highBoost:
+    - DIAMOND
+    blockBoost:
+    - GOLD_BLOCK
+    ResetblockBoost:
+    - EMERALD_BLOCK
+    jumpBlock:
+    - IRON_BLOCK
+    barriers:
+    - COBBLE_WALL
+    - FENCE
+    - FENCE_GATE
+    - NETHER_FENCE
+    speedMods:
+    - SOUL_SAND:0-10
+    - SPONGE:0-20
+  permissions:
+    enable: true
+misc:
+  configVersion: 1.1
+colorScheme:
+  success: '&a'
+  error: '&c'
+  info: '&e'
+  title: '&9'
+  tp: '&5'

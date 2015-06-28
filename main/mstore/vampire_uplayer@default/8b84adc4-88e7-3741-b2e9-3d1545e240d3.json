@@ -1,0 +1,9 @@
+{
+  "vampire": true,
+  "infection": 0.0,
+  "reason": "COMBAT_MISTAKE",
+  "makerId": "e1ef72ce-3c66-33ad-b001-05cd84b327e8",
+  "intending": false,
+  "bloodlusting": false,
+  "usingNightVision": true
+}

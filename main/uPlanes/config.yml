@@ -1,0 +1,34 @@
+# xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx #	
+general:
+  logger:
+    colour: true
+  currencySign: $
+  planes:
+    price: 70.0
+    heightLimit: 256.0
+    defaultHealth: 30.0
+    maxHealth: 100.0
+    punchDamage: 15.0
+    perms: true
+    upgradeperms: false
+    flyPerm: uplanes.fly
+    maxSpeed: 200.0
+    safeExit: true
+    autopilot: true
+    cacheSize: 100
+    fuel:
+      enable: true
+      price: 5.0
+      check:
+      - FEATHER
+      cmdPerm: uplanes.uplanes
+      bypassPerm: uplanes.bypassfuel
+      sellFuel: true
+  shop:
+    enable: true
+colorScheme:
+  success: '&a'
+  error: '&c'
+  info: '&e'
+  title: '&9'
+  tp: '&5'

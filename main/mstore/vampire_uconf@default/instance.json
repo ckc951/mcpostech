@@ -1,0 +1,289 @@
+{
+  "fxSmokePerMilli": 0.008,
+  "fxEnderPerMilli": 0.002,
+  "fxEnderRandomMaxLen": 1,
+  "fxSmokeBurstCount": 30.0,
+  "fxFlameBurstCount": 5.0,
+  "fxEnderBurstCount": 3.0,
+  "shriekWaitMessageCooldownMillis": 500,
+  "shriekCooldownMillis": 3000,
+  "blockDamageFrom": [
+    "DROWNING",
+    "FALL",
+    "STARVATION"
+  ],
+  "blockHealthFrom": [
+    "SATIATED",
+    "REGEN"
+  ],
+  "updatePermsVampire": {
+    "vampire.is.vampire": true,
+    "vampire.is.human": false
+  },
+  "updatePermsHuman": {
+    "vampire.is.vampire": false,
+    "vampire.is.human": true
+  },
+  "updateRespawnFood": 20,
+  "updateRespawnHealth": 20,
+  "updateNameColor": false,
+  "updateNameColorTo": "RED",
+  "dropSelfMaterials": [],
+  "bloodlustMinFood": 2.5,
+  "bloodlustFoodPerMilli": -1.111111111111111E-4,
+  "bloodlustSmokes": 1.5,
+  "nightvisionCanBeUsed": true,
+  "canInfectHorses": true,
+  "effectConfBloodlust": {
+    "priority": "HIGHEST",
+    "colorSet": true,
+    "colorValue": 2039587,
+    "effectIdToStrength": {
+      "8": 4,
+      "1": 4
+    }
+  },
+  "effectConfNightvision": {
+    "priority": "HIGH",
+    "colorSet": true,
+    "colorValue": 0,
+    "effectIdToStrength": {
+      "16": 1
+    }
+  },
+  "effectConfVampire": {
+    "priority": "NORMAL",
+    "colorSet": true,
+    "colorValue": 0,
+    "effectIdToStrength": {
+      "8": 1
+    }
+  },
+  "effectConfInfected": {
+    "priority": "NORMAL",
+    "colorSet": true,
+    "colorValue": 5797459,
+    "effectIdToStrength": {}
+  },
+  "effectConfHuman": {
+    "priority": "NORMAL",
+    "colorSet": false,
+    "colorValue": 0,
+    "effectIdToStrength": {}
+  },
+  "regenMinFood": 2.5,
+  "regenDelayMillis": 10000,
+  "regenFoodPerMilli": 5.0E-4,
+  "regenHealthPerFood": 2.0,
+  "truceBreakMillis": 60000,
+  "truceEntityTypes": [
+    "BLAZE",
+    "WITCH",
+    "CAVE_SPIDER",
+    "CREEPER",
+    "ENDERMAN",
+    "GHAST",
+    "GIANT",
+    "MAGMA_CUBE",
+    "PIG_ZOMBIE",
+    "SKELETON",
+    "SPIDER",
+    "ZOMBIE"
+  ],
+  "combatDamageFactorWithoutBloodlust": 1.0,
+  "combatDamageFactorWithBloodlust": 2.0,
+  "combatWoodDamage": 11,
+  "combatWoodMaterials": [
+    "WOOD_AXE",
+    "WOOD_HOE",
+    "WOOD_PICKAXE",
+    "WOOD_SPADE",
+    "WOOD_SWORD",
+    "STICK",
+    "TORCH",
+    "REDSTONE_TORCH_OFF",
+    "REDSTONE_TORCH_ON",
+    "SIGN",
+    "SIGN_POST",
+    "FENCE",
+    "FENCE_GATE"
+  ],
+  "infectionPerMilli": 7.777777777777778E-7,
+  "infectionProgressNauseaTicks": 240,
+  "infectionProgressDamage": 1,
+  "infectionRiskAtCloseCombatWithoutIntent": 0.003,
+  "infectionRiskAtCloseCombatWithIntent": 0.05,
+  "tradeOfferMaxDistance": 2.0,
+  "tradeOfferToleranceMillis": 20000,
+  "tradeVisualDistance": 7.0,
+  "tradePercentage": 1.0,
+  "foodCakeAllowed": true,
+  "entityTypeFullFoodQuotient": {
+    "CREEPER": 0.1,
+    "SKELETON": 0.1,
+    "SPIDER": 0.1,
+    "GIANT": 0.4,
+    "ZOMBIE": 0.1,
+    "SLIME": 0.0,
+    "GHAST": 0.1,
+    "PIG_ZOMBIE": 0.1,
+    "ENDERMAN": 0.2,
+    "CAVE_SPIDER": 0.15,
+    "SILVERFISH": 0.15,
+    "BLAZE": 0.2,
+    "MAGMA_CUBE": 0.05,
+    "ENDER_DRAGON": 0.5,
+    "PIG": 0.05,
+    "SHEEP": 0.05,
+    "COW": 0.1,
+    "CHICKEN": 0.05,
+    "SQUID": 0.1,
+    "WOLF": 0.1,
+    "MUSHROOM_COW": 0.15,
+    "SNOWMAN": 0.05,
+    "OCELOT": 0.2,
+    "IRON_GOLEM": 0.1,
+    "VILLAGER": 0.05,
+    "PLAYER": 0.0
+  },
+  "holyWaterSplashRadius": 6.0,
+  "holyWaterTemp": 0.7,
+  "holyWaterResources": [
+    {
+      "id": 373
+    },
+    {
+      "id": 351,
+      "damage": 4
+    }
+  ],
+  "opacityPerArmorPiece": 0.15,
+  "baseRad": -0.35,
+  "tempPerRadAndMilli": 1.0E-4,
+  "sunNauseaTemp": 0.1,
+  "sunWeaknessTemp": 0.2,
+  "sunSlowTemp": 0.3,
+  "sunBlindnessTemp": 0.4,
+  "sunBurnTemp": 0.5,
+  "sunNauseaTicks": 200,
+  "sunWeaknessTicks": 200,
+  "sunSlowTicks": 200,
+  "sunBlindnessTicks": 200,
+  "sunBurnTicks": 60,
+  "sunSmokesPerTempAndMilli": 0.012,
+  "sunFlamesPerTempAndMilli": 4.0E-4,
+  "typeIdOpacity": {
+    "0": 0.0,
+    "6": 0.2,
+    "8": 0.2,
+    "9": 0.2,
+    "18": 0.2,
+    "20": 0.5,
+    "27": 0.0,
+    "28": 0.0,
+    "30": 0.0,
+    "31": 0.2,
+    "32": 0.2,
+    "34": 0.1,
+    "37": 0.2,
+    "38": 0.2,
+    "39": 0.2,
+    "40": 0.2,
+    "44": 1.0,
+    "50": 0.1,
+    "51": 0.0,
+    "53": 1.0,
+    "55": 0.0,
+    "59": 0.2,
+    "63": 0.1,
+    "64": 0.0,
+    "65": 0.0,
+    "66": 0.0,
+    "67": 1.0,
+    "68": 0.0,
+    "69": 0.1,
+    "70": 0.0,
+    "71": 0.0,
+    "72": 0.0,
+    "75": 0.1,
+    "76": 0.1,
+    "77": 0.0,
+    "78": 0.0,
+    "83": 0.2,
+    "85": 0.4,
+    "93": 0.0,
+    "94": 0.0,
+    "96": 0.0,
+    "101": 0.4,
+    "102": 0.0,
+    "104": 0.2,
+    "105": 0.2,
+    "106": 0.2,
+    "107": 0.0,
+    "108": 1.0,
+    "109": 1.0,
+    "111": 0.2,
+    "113": 0.4,
+    "114": 1.0,
+    "115": 0.2
+  },
+  "altarSearchRadius": 10,
+  "altarMinRatioForInfo": 0.0,
+  "altarDark": {
+    "name": "어둠의 제단",
+    "desc": "<i>이 제단은 어둡고 사악해 보입니다.",
+    "coreMaterial": "GOLD_BLOCK",
+    "materialCounts": {
+      "WEB": 5,
+      "OBSIDIAN": 30,
+      "DIAMOND_BLOCK": 2,
+      "DEAD_BUSH": 5,
+      "GOLD_BLOCK": 1
+    },
+    "resources": [
+      {
+        "id": 282
+      },
+      {
+        "id": 352,
+        "count": 10
+      },
+      {
+        "id": 289,
+        "count": 10
+      },
+      {
+        "id": 331,
+        "count": 10
+      }
+    ]
+  },
+  "altarLight": {
+    "name": "빛의 신전",
+    "desc": "<i>이 신전은 밝고 선해 보입니다.",
+    "coreMaterial": "LAPIS_BLOCK",
+    "materialCounts": {
+      "GLOWSTONE": 30,
+      "DIAMOND_BLOCK": 2,
+      "RED_ROSE": 5,
+      "YELLOW_FLOWER": 5,
+      "LAPIS_BLOCK": 1
+    },
+    "resources": [
+      {
+        "id": 326
+      },
+      {
+        "id": 264
+      },
+      {
+        "id": 353,
+        "count": 20
+      },
+      {
+        "id": 296,
+        "count": 20
+      }
+    ]
+  }
+}

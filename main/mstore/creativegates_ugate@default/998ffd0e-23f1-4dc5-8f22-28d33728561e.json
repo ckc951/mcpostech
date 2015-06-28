@@ -1,0 +1,59 @@
+{
+  "creatorId": "88f6f9b7-f9d9-434e-a3c2-70cc1d50c04a",
+  "createdMillis": 1432399401448,
+  "usedMillis": 0,
+  "networkId": "Z",
+  "restricted": false,
+  "enterEnabled": false,
+  "exitEnabled": true,
+  "exit": {
+    "w": "world_nether",
+    "lx": 649.5364148583502,
+    "ly": 46.0,
+    "lz": 391.2900625091599,
+    "p": 0.0,
+    "y": 270.0
+  },
+  "coords": [
+    {
+      "bx": 647,
+      "by": 45,
+      "bz": 391
+    },
+    {
+      "bx": 647,
+      "by": 46,
+      "bz": 390
+    },
+    {
+      "bx": 647,
+      "by": 46,
+      "bz": 391
+    },
+    {
+      "bx": 647,
+      "by": 46,
+      "bz": 392
+    },
+    {
+      "bx": 647,
+      "by": 47,
+      "bz": 390
+    },
+    {
+      "bx": 647,
+      "by": 47,
+      "bz": 391
+    },
+    {
+      "bx": 647,
+      "by": 47,
+      "bz": 392
+    },
+    {
+      "bx": 647,
+      "by": 48,
+      "bz": 391
+    }
+  ]
+}
