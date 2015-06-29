@@ -1,0 +1,13 @@
+calllightning
+fireball
+help
+levitate
+list
+scroll
+skywalk
+wall
+windrun
+windsprint
+windwalk
+zeus
+zeuspr
