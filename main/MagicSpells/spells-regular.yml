@@ -1505,6 +1505,10 @@ windsprint:
     str-cost: 25 mana, 2 feathers, plus 1 feather every 15 seconds
     str-cast-self: You can now sprint on the wind!
     str-fade: You no longer sprint on the wind.
+    witherskull:
+    spell-class: ".instant.WitherSkullSpell"
+    charged: false
+    velocity: 2.0
 zap:
     spell-class: ".targeted.ZapSpell"
     name: zap
