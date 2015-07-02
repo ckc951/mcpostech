@@ -62,7 +62,7 @@ blink:
     description: Teleport a short distance.
     cast-item: stick
     cooldown: 8
-    range: 25
+    range: 35
     pass-through-ceiling: false
     smoke-trail: true
     effects:
@@ -71,7 +71,7 @@ blink:
     cost:
         - mana 15
     str-cost: 15 mana
-    str-cast-self: You blink away!
+    str-cast-self: 비상 탈출!!
     str-cant-blink: You cannot blink there.
 build:
     spell-class: ".targeted.BuildSpell"
@@ -372,7 +372,7 @@ explosivearrow:
     spell-icon: arrow
     description: Cause an explosion where an arrow lands
     cast-item: blaze_rod
-    cooldown: 30
+    cooldown: 10
     projectile: arrow
     velocity: 0
     require-hit-entity: false
@@ -385,7 +385,7 @@ explosivearrow:
         - sulphur 1
         - arrow 1
     str-cost: 25 mana, 1 gunpowder, and 1 arrow
-    str-cast-self: You fire an explosive arrow.
+    str-cast-self: 예술은 폭발 !!!.
 farm:
     spell-class: ".targeted.FarmSpell"
     name: farm
@@ -498,8 +498,8 @@ forcepush:
     spell-icon: record_3
     description: Push back your enemies.
     cast-item: bone
-    cooldown: 8
-    range: 10
+    cooldown: 6
+    range: 12
     pushback-force: 30
     additional-vertical-force: 15
     max-vertical-force: 20
@@ -507,7 +507,7 @@ forcepush:
     cost:
         - mana 30
     str-cost: 30 mana
-    str-cast-self: You push back your enemies!
+    str-cast-self: 실프들이 몹을 날려버렸습니다 !!
 forcetoss:
     spell-class: ".targeted.ForcetossSpell"
     name: forcetoss
@@ -515,7 +515,7 @@ forcetoss:
     description: Magically throw an enemy into the air.
     cast-item: blaze_rod
     cooldown: 5
-    range: 15
+    range: 12
     damage: 0
     horizontal-force: 30
     vertical-force: 15
@@ -525,7 +525,7 @@ forcetoss:
         - mana 10
     str-cost: 10 mana
     str-no-target: No target found.
-    str-cast-self: You push back your enemy!
+    str-cast-self: 실프가 몹을 날려 버렸습니다. !!
 freeze:
     spell-class: ".instant.FreezeSpell"
     name: freeze
@@ -570,15 +570,16 @@ frostwalk:
     cast-item: book
     size: 2
     leave-frozen: false
-    cooldown: 30
+    cooldown: 35
+    duration: 40
     cost:
         - mana 50
     use-cost:
         - snow_ball 1
     use-cost-interval: 25
     str-cost: 50 mana, plus 1 snowball every 25 blocks
-    str-cast-self: You can now walk on water!
-    str-fade: You can no longer walk on water.
+    str-cast-self: 운디네의 도움을 받습니다.
+    str-fade: 운디네는 물속에서만 사용가능해요.
 gate:
     spell-class: ".instant.GateSpell"
     name: gate
@@ -602,11 +603,12 @@ geyser:
     spell-icon: water
     description: Create a geyser of water at your enemy's feet.
     cast-item: blaze_rod
+    cooldown: 10
     range: 20
-    damage: 0
+    damage: 5
     velocity: 10
-    animation-speed: 2
-    geyser-height: 4
+    animation-speed: 3
+    geyser-height: 8
     geyser-type: water
     ignore-armor: false
     can-target: players,monsters
@@ -614,8 +616,8 @@ geyser:
     cost:
         - mana 10
     str-cost: 10 mana
-    str-cast-self: You create a geyser at your enemy's feet.
-    str-no-target: No target found.
+    str-cast-self: 꼬부기! 물대포 !!
+    str-no-target: 목표물이 없습니다.
 gills:
     spell-class: ".buff.GillsSpell"
     name: gills
@@ -810,15 +812,15 @@ lightning:
     description: Call down lightning.
     cast-item: blaze_rod
     cooldown: 15
-    range: 20
-    additional-damage: 0
+    range: 40
+    additional-damage: 10
     no-damage: false
     require-entity-target: false
     check-plugins: true
     cost:
         - mana 15
     str-cost: 15 mana
-    str-cast-self: You call down lightning.
+    str-cast-self: 빛의 심판 !!.
     str-no-target: No target found.
 calllightning:
     spell-class: ".targeted.LightningSpell"
@@ -826,8 +828,8 @@ calllightning:
     spell-icon: gold_sword
     description: Call down lightning.
     cast-item: blaze_rod
-    cooldown: 0
-    range: 20
+    cooldown: 15
+    range: 40
     additional-damage: 40
     no-damage: false
     require-entity-target: false
@@ -843,6 +845,8 @@ lightwalk:
     spell-icon: glowstone
     description: Light your path.
     cast-item: 317
+    cooldown: 39
+    duration: 40
     cost:
         - mana 25
         - torch 3
@@ -850,7 +854,7 @@ lightwalk:
         - torch 1
     use-cost-interval: 25
     str-cost: 25 mana and 3 torches, plus 1 torch occasionally
-    str-cast-self: Light appears at your feet.
+    str-cast-self: 빛이 바닥에 스며듭니다.
     str-fade: The light at your feet goes out.
 lilywalk:
     spell-class: ".buff.LilywalkSpell"
@@ -1347,9 +1351,9 @@ volley:
     spell-icon: bow
     description: Send a volley of arrows at your targeted location.
     cast-item: blaze_rod
-    cooldown: 45
-    range: 30
-    arrows: 10
+    cooldown: 15
+    range: 40
+    arrows: 15
     speed: 20
     spread: 150
     shoot-interval: 0
@@ -1357,7 +1361,7 @@ volley:
         - mana 20
         - arrow 2
     str-cost: 20 mana and 2 arrows
-    str-cast-self: You fire a volley of magic arrows.
+    str-cast-self: 떨어져라라 시옥(矢獄) !
     str-no-target: No target found.
 walkway:
     spell-class: ".buff.WalkwaySpell"
