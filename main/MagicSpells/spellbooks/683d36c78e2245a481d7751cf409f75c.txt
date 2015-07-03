@@ -2,9 +2,11 @@ calllightning
 fireball
 help
 levitate
+lightwalk
 list
 scroll
 skywalk
+teach
 wall
 windrun
 windsprint
