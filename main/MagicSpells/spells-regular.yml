@@ -618,6 +618,31 @@ geyser:
     str-cost: 10 mana
     str-cast-self: 꼬부기! 물대포 !!
     str-no-target: 목표물이 없습니다.
+gianttree:
+    spell-class: ".ExternalCommandSpell"
+    name: gianttree
+    spell-icon: sapling:3
+    enabled: false
+    description: Create a giant tree!
+    cooldown: 300
+    can-cast-by-command: true
+    can-cast-with-item: false
+    command-to-execute: 
+        - "gt 25 4"
+    command-to-execute-later: []
+    command-delay: 0
+    command-to-block:
+        - "gt"
+    temporary-permissions: []
+    require-player-target: false
+    obey-los: true
+    range: 20
+    cost:
+        - mana 50
+        - sapling 5
+    str-cost: 50 mana and 5 saplings
+    str-cast-self: You grow a tree!
+    str-cant-use-command: "&4You don't have permission to do that."
 gills:
     spell-class: ".buff.GillsSpell"
     name: gills
@@ -992,6 +1017,31 @@ purge:
         - mana 50
     str-cost: 50 mana
     str-cast-self: You purge all life around you.
+randomteleport:
+    spell-class: ".ExternalCommandSpell"
+    name: randomteleport
+    spell-icon: sapling:2
+    enabled: false
+    description: Random Teleport!
+    cooldown: 0
+    can-cast-by-command: true
+    can-cast-with-item: false
+    command-to-execute: 
+        - "randomteleport 10 100"
+    command-to-execute-later: []
+    command-delay: 0
+    command-to-block:
+        - "gt"
+    temporary-permissions: []
+    require-player-target: false
+    obey-los: true
+    range: 20
+    cost:
+        - mana 50
+        - sapling 5
+    str-cost: 50 mana and 5 saplings
+    str-cast-self: Random Teleport!
+    str-cant-use-command: "&4You don't have permission to do that."
 reach:
     spell-class: ".buff.ReachSpell"
     name: reach
@@ -1332,6 +1382,24 @@ telekinesis:
         - mana 5
     str-cost: 5 mana
     str-no-target: You must target a switch or button.
+torcharrow:
+    spell-class: ".PermissionSpell"
+    name: torcharrow
+    spell-icon: torch
+    enabled: false
+    description: Shoot torch arrows.
+    cast-item: book
+    cooldown: 10
+    can-cast-by-command: true
+    can-cast-with-item: true
+    permission-nodes:
+        - "torcharrow.tArrow"
+    duration: 600
+    cost:
+        - mana 25
+        - torch 3
+    str-cost: 25 mana and 3 torches
+    str-cast-self: You can now fire torch arrows.
 tree:
     spell-class: ".targeted.TreeSpell"
     name: tree
@@ -1530,52 +1598,6 @@ zap:
     str-cast-self: You zapped a block.
     str-cant-zap: You can't zap that.
     str-no-target: No target found.
-    
-gianttree:
-    spell-class: ".ExternalCommandSpell"
-    name: gianttree
-    spell-icon: sapling:3
-    enabled: false
-    description: Create a giant tree!
-    cooldown: 300
-    can-cast-by-command: true
-    can-cast-with-item: false
-    command-to-execute: 
-        - "gt 25 4"
-    command-to-execute-later: []
-    command-delay: 0
-    command-to-block:
-        - "gt"
-    temporary-permissions: []
-    require-player-target: false
-    obey-los: true
-    range: 20
-    cost:
-        - mana 50
-        - sapling 5
-    str-cost: 50 mana and 5 saplings
-    str-cast-self: You grow a tree!
-    str-cant-use-command: "&4You don't have permission to do that."
-    
-torcharrow:
-    spell-class: ".PermissionSpell"
-    name: torcharrow
-    spell-icon: torch
-    enabled: false
-    description: Shoot torch arrows.
-    cast-item: book
-    cooldown: 10
-    can-cast-by-command: true
-    can-cast-with-item: true
-    permission-nodes:
-        - "torcharrow.tArrow"
-    duration: 600
-    cost:
-        - mana 25
-        - torch 3
-    str-cost: 25 mana and 3 torches
-    str-cast-self: You can now fire torch arrows.
-    
 zeus:
     spell-class: ".MultiSpell"
     name: zeus
@@ -1590,7 +1612,6 @@ zeus:
         - lightning
         - DELAY 5
         - explode
-        
 zeuspr:
     spell-class: ".MultiSpell"
     name: zeuspr
