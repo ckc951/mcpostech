@@ -1602,27 +1602,30 @@ zeus:
     spell-class: ".MultiSpell"
     name: zeus
     spell-icon: gold_axe
-    cooldown: 0
+    cooldown: 40
     cast-item: blaze_rod
     check-individual-cooldowns: false
     cost:
         - mana 30
     str-cost: 30 mana
+    str-cast-self:"천벌을 내릴것이다!"
     spells:
         - lightning
-        - DELAY 5
+        - DELAY 3
         - explode
 zeuspr:
     spell-class: ".MultiSpell"
     name: zeuspr
     spell-icon: gold_axe
-    cooldown: 0
+    cooldown: 45
     cast-item: blaze_rod
     check-individual-cooldowns: false
     cost:
         - mana 30
     str-cost: 30 mana
+    str-cast-self:"신성모독 이로다!"
+    str-scroll-subtext:"위협적인 폭파력이 더해진 번개를 내려칩니다.."
     spells:
         - lightning
-        - DELAY 5
+        - DELAY 3
         - explode_pr
