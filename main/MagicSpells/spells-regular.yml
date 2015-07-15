@@ -992,6 +992,31 @@ purge:
         - mana 50
     str-cost: 50 mana
     str-cast-self: You purge all life around you.
+randomteleport:
+spell-class: ".ExternalCommandSpell"
+    name: randomteleport
+    spell-icon: sapling:2
+    enabled:  true
+    description: Random Teleport!
+    cooldown: 0
+    can-cast-by-command: true
+    can-cast-with-item: false
+    command-to-execute: 
+        - "randomteleport 10 100"
+    command-to-execute-later: []
+    command-delay: 0
+    command-to-block:
+        - "gt"
+    temporary-permissions: []
+    require-player-target: false
+    obey-los: true
+    range: 20
+    cost:
+        - mana 50
+        - sapling 5
+    str-cost: 50 mana and 5 saplings
+    str-cast-self: Random Teleport!
+    str-cant-use-command: "&4You don't have permission to do that."
 reach:
     spell-class: ".buff.ReachSpell"
     name: reach
@@ -1535,7 +1560,7 @@ gianttree:
     spell-class: ".ExternalCommandSpell"
     name: gianttree
     spell-icon: sapling:3
-    enabled: false
+    enabled: true
     description: Create a giant tree!
     cooldown: 300
     can-cast-by-command: true
@@ -1580,28 +1605,31 @@ zeus:
     spell-class: ".MultiSpell"
     name: zeus
     spell-icon: gold_axe
-    cooldown: 0
+    cooldown: 45
     cast-item: blaze_rod
     check-individual-cooldowns: false
     cost:
         - mana 30
     str-cost: 30 mana
+    str-cast-self:"천벌이 내릴것이다!"
     spells:
         - lightning
-        - DELAY 5
+        - DELAY 3
         - explode
         
 zeuspr:
     spell-class: ".MultiSpell"
     name: zeuspr
     spell-icon: gold_axe
-    cooldown: 0
+    cooldown: 45
     cast-item: blaze_rod
     check-individual-cooldowns: false
     cost:
         - mana 30
     str-cost: 30 mana
+    str-cast-self:"신성모독 이로다!" 
+    str-scroll-subtext:"위협적인 폭파력이 더해진 번개를 내려칩니다.." 
     spells:
         - lightning
-        - DELAY 5
+        - DELAY 3
         - explode_pr
