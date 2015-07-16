@@ -61,7 +61,7 @@ blink:
     spell-icon: ender_pearl
     description: Teleport a short distance.
     cast-item: stick
-    cooldown: 8
+    cooldown: 1
     range: 35
     pass-through-ceiling: false
     smoke-trail: true
@@ -71,7 +71,7 @@ blink:
     cost:
         - mana 15
     str-cost: 15 mana
-    str-cast-self: 비상 탈출!!
+    str-cast-self: 텔레포트!
     str-cant-blink: You cannot blink there.
 build:
     spell-class: ".targeted.BuildSpell"
@@ -216,7 +216,7 @@ disarm:
     spell-icon: stone_sword:130
     description: Disarm your opponent.
     cast-item: blaze_rod
-    cooldown: 15
+    cooldown: 5
     range: 20
     disarmable-items:
         - blaze_rod
@@ -224,9 +224,25 @@ disarm:
         - book
         - bone
         - wood_sword
+        - wood_Pickaxe
+        - wood_axe
+        - wood_shovel
         - stone_sword
+        - stone_Pickaxe
+        - stone_axe
+        - stone_shovel
         - iron_sword
+        - iron_Pickaxe
+        - iron_axe
+        - iron_shovel
+        - golden_axe
+        - golden_Pickaxe
+        - golden_sword
+        - golden_shovel
         - diamond_sword
+        - diamond_Pickaxe
+        - diamond_axe
+        - diamond_shovel
         - bow
     can-target: players,zombies,skeletons
     disarm-duration: 100
@@ -237,8 +253,8 @@ disarm:
     str-cost: 20 mana
     str-no-target: No target found.
     str-invalid-item: Your target could not be disarmed.
-    str-cast-self: You have disarmed %t.
-    str-cast-target: "%a has disarmed you."
+    str-cast-self: 함정카드 발동!.
+    str-cast-target: "타켓이 없습니다."
 dowse:
     spell-class: ".instant.DowseSpell"
     name: dowse
@@ -302,7 +318,7 @@ enderchest:
     spell-icon: ender_chest
     description: Opens your ender chest inventory.
     cast-item: book
-    cooldown: 300
+    cooldown: 10
     cost:
         - mana 50
         - ender_pearl 1
@@ -603,7 +619,7 @@ geyser:
     spell-icon: water
     description: Create a geyser of water at your enemy's feet.
     cast-item: blaze_rod
-    cooldown: 10
+    cooldown: 5
     range: 20
     damage: 5
     velocity: 10
@@ -845,7 +861,7 @@ lightwalk:
     spell-icon: glowstone
     description: Light your path.
     cast-item: 317
-    cooldown: 39
+    cooldown: 0
     duration: 40
     cost:
         - mana 25
@@ -904,18 +920,20 @@ minion:
     spell-icon: monster_egg:54
     description: Summons an undead minion to aid you.
     cast-item: bone
-    cooldown: 60
-    duration: 60
+    cooldown: 20
+    duration: 180
     mob-chances:
-        - Zombie 75
-        - Skeleton 25
+        - Zombie 5
+        - Skeleton 75
+        - Enderman 15
+        - Ghast 5
     prevent-sun-burn: true
     target-players: false
     cost:
         - mana 30
         - bone 2
     str-cost: 30 mana and 2 bones
-    str-cast-self: You summon an undead minion.
+    str-cast-self: 당신이 죽인 몬스터의 원령을 사역시켰습니다.
     str-fade: Your undead minion dies.
 pain:
     spell-class: ".targeted.PainSpell"
@@ -1376,17 +1394,17 @@ volley:
     spell-icon: bow
     description: Send a volley of arrows at your targeted location.
     cast-item: blaze_rod
-    cooldown: 15
+    cooldown: 5
     range: 40
-    arrows: 15
-    speed: 20
-    spread: 150
+    arrows: 25
+    speed: 30
+    spread: 130
     shoot-interval: 0
     cost:
         - mana 20
         - arrow 2
     str-cost: 20 mana and 2 arrows
-    str-cast-self: 떨어져라라 시옥(矢獄) !
+    str-cast-self: 고슴도치의 가호를..
     str-no-target: No target found.
 walkway:
     spell-class: ".buff.WalkwaySpell"
@@ -1603,16 +1621,16 @@ zeus:
     spell-class: ".MultiSpell"
     name: zeus
     spell-icon: gold_axe
-    cooldown: 45
+    cooldown: 15
     cast-item: blaze_rod
     check-individual-cooldowns: false
     cost:
         - mana 30
     str-cost: 30 mana
-    str-cast-self: "천벌이 내릴것이다!"
+    str-cast-self: "천벌!"
     spells:
         - lightning
-        - DELAY 3
+        - DELAY 4
         - explode
         
 zeuspr:
@@ -1629,5 +1647,5 @@ zeuspr:
     str-scroll-subtext: "위협적인 폭파력이 더해진 번개를 내려칩니다.." 
     spells:
         - lightning
-        - DELAY 3
+        - DELAY 4
         - explode_pr
